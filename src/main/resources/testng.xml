@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite thread-count="1" verbose="1" name="ZOOPLA APPLICATION AUTOMATION TEST" parallel="tests" >
+<listeners>
+  <listener class-name="com.zoopla.qa.extentreport.ExtentReportListener"/>
+</listeners>
+  <test name="ZOOPLA TEST CASES" >
+    <classes>
+      <class name="com.zoopla.qa.TestCases.ZooplaHomePageTest"></class>
+      <class name="com.zoopla.qa.TestCases.ForSaleTest"></class>
+      <class name="com.zoopla.qa.TestCases.UserSelectedPropertyTest"></class>
+      
+    </classes>
+ </test>
+</suite>

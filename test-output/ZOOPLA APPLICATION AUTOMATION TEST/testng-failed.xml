@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [ZOOPLA APPLICATION AUTOMATION TEST]" parallel="tests">
+  <listeners>
+    <listener class-name="com.zoopla.qa.extentreport.ExtentReportListener"/>
+  </listeners>
+  <test name="ZOOPLA TEST CASES(failed)" parallel="tests">
+    <classes>
+      <class name="com.zoopla.qa.TestCases.ForSaleTest">
+        <methods>
+          <include name="shutDown"/>
+          <include name="saleSetUp"/>
+          <include name="selectPropertyTest"/>
+        </methods>
+      </class> <!-- com.zoopla.qa.TestCases.ForSaleTest -->
+      <class name="com.zoopla.qa.TestCases.ZooplaHomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="locationSearchTest"/>
+        </methods>
+      </class> <!-- com.zoopla.qa.TestCases.ZooplaHomePageTest -->
+    </classes>
+  </test> <!-- ZOOPLA TEST CASES(failed) -->
+</suite> <!-- Failed suite [ZOOPLA APPLICATION AUTOMATION TEST] -->
