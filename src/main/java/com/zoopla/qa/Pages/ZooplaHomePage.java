@@ -41,5 +41,10 @@ public class ZooplaHomePage extends TestBase
          return new ForSale();
      }
      
+     public void login()
+     {
+    	 System.out.println("hello yeh func aisi hai");
+     }
+     
           	
 }
